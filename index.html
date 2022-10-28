@@ -5,81 +5,169 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fr.allfont.net/allfont.css?fonts=raleway-regular" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5be0ef6e35.js" crossorigin="anonymous"></script>
     <title>Booki</title>
 </head>
 <body>
     <header>
-        <img src="./images/logo/Booki.png">
-        <h4>Hébergements</h4>
-        <h4>Activités</h4>
+        <div id="logo">
+            <img src="./images/logo/Booki.png">
+            <nav>
+                <ul>       
+                    <li><a href="#">Hébergements</a> </li>
+                    <li><a href="#">Activités</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section id="underHeader">
+            <h1>Trouvez votre Hébergement pour des vacances de rêve</h1>
+            <p>En plein centre-ville ou pleine nature</p>
+        </section>
     </header>
-   <section class="underHeader">
-        <h3>Trouvez votre Hébergement pour des vacances de rêve</h2>
-        <h4>En plein centre-ville ou pleine nature</h3>
+    <section id="search">
+        <form action="">
+            <span class="fa-stack fa-2x">
+                <i class="fa-solid fa-square fa-stack-2x"></i>
+                <i class="fa-solid fa-location-dot fa-stack-1x fa-inverse"></i>
+              </span>
+           
+            <textarea id="subject" name="subject" placeholder="ville" ></textarea>
+            <div>
+                <input type="submit" value="Rechercher">
+            </div>
+        </form>
     </section>
-    <section>
-        <img src="">
-        <h3>Marseille, France</h3>
-        <button></button>
-    </section>
-    <section>
-        <h3>Filtres</h3>
-        <button>Économique</button>
-        <button>Familial</button>
-        <button>Romantique</button>
-        <button>Animaux Autorisés</button>
-    </section>
-    <section>
-        <img src="">
-        <p>Plus de 500 logements sont disponibles dans cette ville</p>
-    </section>
-    <section>
-        <img src="" href="#">
-        <img src="" href="#">
-        <img src="" href="#">
-        <img src="" href="#">
-        <img src="" href="#">
-        <img src="" href="#">
-    </section>
-    <section>
-        <h3></h3>
-    </section>
-    <section>
-        <article>
-            <img src="" href="#">
-            <p>Vieux-Port</p>
+    
+        <section id="filtre">
+            <h2>Filtres</h2>
+            <button>Économique</button>
+            <button>Familial</button>
+            <button>Romantique</button>
+            <button>Animaux Autorisés</button>
+        </section>
+        <section id="dispo">
+            <span class="fa-stack" style="vertical-align: top;">
+                <i class="fa-regular fa-circle fa-stack-2x "></i>
+                <i class="fa-solid fa-info fa-stack-1x"></i>
+              </span>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </section>
+        <div>
+        <section id="lodging">
+            <article> 
+                <a href="#">
+                <div>
+                    <img src="">
+                    <h3>l'hôtel</h3>
+                    <p>prix<span>€</span></p>
+                    <div id="star">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                </div>
+            </a>
         </article>
-        <article>
-            <img src="" href="#">
-            <p>Fort de Pomègues</p>
+        </section>
+        <section>
+            <h3></h3>
+        </section>
+        <section id="popular">
+            <h2>Les plus populaires</h2>
+            <article> 
+                <a href="#">
+                <div>
+                    <img src="">
+                    <h3>l'hôtel</h3>
+                    <p>prix<span>€</span></p>
+                    <div id="star">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                </div>
+                </a>
+            </article>
+        <article> 
+            <a href="#">
+            <div>
+                <img src="">
+                <h3>l'hôtel</h3>
+                <p>prix<span>€</span></p>
+                <div id="star">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+            </div>
+            </a>
         </article>
-        <article>
-            <img src="" href="#">
-            <p>Parc national des Calanques</p>
-        </article>
-        <article>
-            <img src="" href="#">
-            <p>Notre-Dame-de-la-Garde</p>
-        </article>
-    </section>
+    <article> 
+        <a href="#">
+        <div>
+            <img src="">
+            <h3>l'hôtel</h3>
+            <p>prix<span>€</span></p>
+            <div id="star">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+        </div>
+        </a>
+    </article>
+    <article> 
+        <a href="#">
+        <div>
+            <img src="">
+            <h3>l'hôtel</h3>
+            <p>prix<span>€</span></p>
+            <div id="star">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+        </div>
+        </a>
+    </article>
+        </section>
+    </div>
+    </main>
     <footer>
-        <artcile>
-            <p>À propos</p>
-            <p href="#">Fonctionnement du site</p>
-            <p href="#">Conditions générales</p>
-            <p href="#">Données et confidentialité</p>
-        </artcile>
-        <artcile>
+        <section>
+            <h2>À propos</h2>
+        <ul>
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions générales</a></li>
+            <li><a href="#">Données et confidentialité</a></li>
+        </ul>
+        <section>
             <p>Nos hébergements</p>
+        
             <p href="#">Charte qualité</p>
             <p href="#">Proposer votre Hôtel</p>
-        </artcile>
-        <artcile>
+            </section>
+        <section>
             <p>Assistance</p>
             <p href="#">Centre d'aide</p>
             <p href="#">Nous contacter</p>
-        </artcile>
+        </section>
     </footer>
-</body>
+    </body>
 </html>

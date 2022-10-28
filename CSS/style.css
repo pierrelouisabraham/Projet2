@@ -1,13 +1,43 @@
 body {
+    font-family: 'Raleway';
+  }
+ 
+   #logo {
     display: flex;
-    font-family: 'Raleway Regular';
-  }
-  .header {
     flex-direction: row;
-    align-items: flex-end;
-    max-width: 100%;
+    justify-content: flex-start;
+    
   }
-  
-  .underHeader {
+
+  #logo nav{
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 100%;
+  }
+
+  #logo nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-basis: 30%;
+    justify-content: space-evenly;
+    list-style-type:none;
+  }
+
+  #logo nav ul a {
+    text-decoration: none;
+  }
+
+  #underHeader {
+    display: flex;
     flex-direction: column;
   }
+
+  #search form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: stretch;
+  }
+
+  
