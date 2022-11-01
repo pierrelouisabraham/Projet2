@@ -2,42 +2,123 @@ body {
     font-family: 'Raleway';
   }
  
-   #logo {
+#logo {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    
   }
 
-  #logo nav{
+#logo img {
+  width: 61.09px;
+  height: 19px;
+}
+
+#logo nav {
     display: flex;
     justify-content: flex-end;
     flex-basis: 100%;
-  }
+}
 
-  #logo nav ul {
+#logo nav ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-basis: 30%;
     justify-content: space-evenly;
     list-style-type:none;
+    font-weight: 400;
+    font-size: 16px;
   }
 
-  #logo nav ul a {
+#logo nav ul a {
     text-decoration: none;
   }
 
-  #underHeader {
+#underHeader {
     display: flex;
     flex-direction: column;
   }
 
-  #search form {
+#search form {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: stretch;
   }
 
-  
+#filtre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 914px;
+  height: 50px;
+}
+
+#filtre h2 {
+  height: 21px;
+  width: 54px;
+  left: 62px;
+  top: 294px;
+  border-radius: nullpx;
+}
+
+#filtres button > * {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: #F0F2F6;
+}
+
+#dispo {
+  display: flex;
+  flex-direction: row;
+}
+
+#mainBlock {
+  display: flex;
+  flex-direction: row;
+}
+
+#lodging {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  background-color:  #F2F2F2;
+}
+
+#popular{
+  display: flex;
+  flex-direction: column;
+}
+
+
+#lodging > article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 20%;
+  max-height: 10%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+#lodging > article > img {
+  max-width: 100%;
+  max-height: 50%;
+  border-radius: 20px;
+}
+
+#rent img {
+  border: 5px solid #FFFFFF;
+  border-radius: 20px 20px 0px 0px;
+  max-width: 100%;
+  max-height: 10%;
+}
+
+#popularimg {
+  border: 5px solid #FFFFFF;
+  border-radius: 20px 20px 0px 0px;
+  background-image: url("../images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+} 
