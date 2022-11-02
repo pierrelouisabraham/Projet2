@@ -152,10 +152,10 @@ body {
   max-width: 50%;
 }
 
-#thirdBox > article {
+#thirdBox > article > * {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   max-width: 33%;
   max-height: 10%;
   background-color: white;
