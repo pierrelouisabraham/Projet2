@@ -119,7 +119,6 @@ body {
   max-height: 10%;
   background-color: white;
   border-radius: 20px;
-  flex-grow: 1;
 }
 
 #lodging > article > img {
@@ -144,3 +143,44 @@ body {
   max-height: 50%;
   border-radius: 20px;
 } 
+
+#thirdBox {
+  display: flex;
+  flex-flow: row wrap;
+  background-color:  #F2F2F2;
+  max-width: 50%;
+}
+
+#thirdBox > article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 33%;
+  max-height: 10%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+#thirdBox > article > img {
+  max-width: 100%;
+  max-height: 50%;
+  border-radius: 20px;
+}
+
+footer {
+  background-color: #F2F2F2;
+  display: flex;
+  flex-flow: row;
+  max-width: 100%;
+  flex-basis: 100%;
+  justify-content: space-around;
+}
+
+footer h2 {
+  display: flex;
+  justify-content: center;
+}
+
+footer section  ul {
+  list-style-type:none;
+}
