@@ -89,7 +89,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   background-color:  #F2F2F2;
-  max-width: 50%;
+  max-width: 65%;
   justify-content: space-around;
   align-content: flex-start;
 }
@@ -140,6 +140,7 @@ body {
   max-height: 25%;
   background-color: white;
   border-radius: 20px;
+  align-self: center;
 }
 
 #popular > article > img {
