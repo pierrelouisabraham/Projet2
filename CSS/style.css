@@ -115,6 +115,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   max-width: 33%;
   max-height: 10%;
   background-color: white;
@@ -181,6 +182,11 @@ footer h2 {
   justify-content: center;
 }
 
-footer section  ul {
+footer section ul {
   list-style-type:none;
+  
+}
+
+footer section ul li a {
+  text-decoration : none;
 }
