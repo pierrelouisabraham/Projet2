@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
   }
 
 #logo img {
@@ -32,6 +33,10 @@ body {
 
 #logo nav ul a {
     text-decoration: none;
+  }
+
+  #logo nav ul a:focus {
+    border-top: 10px;
   }
 
 #underHeader {
@@ -76,19 +81,33 @@ body {
 
 #mainBlock {
   display: flex;
-  flex-direction: row;
+  flex-flow: row;
 }
 
 #lodging {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
   background-color:  #F2F2F2;
+  max-width: 50%;
+}
+
+#lodging div {
+  display: flex;
+  justify-content: stretch;
+  flex-basis: 100%;
+}
+
+#lodging h2 {
+  background-color:  #F2F2F2;
+  max-width: 100%;
+  
 }
 
 #popular{
   display: flex;
   flex-direction: column;
+  max-width: 50%;
+  background-color:  #F2F2F2;
 }
 
 
@@ -96,10 +115,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 20%;
+  max-width: 33%;
   max-height: 10%;
   background-color: white;
   border-radius: 20px;
+  flex-grow: 1;
 }
 
 #lodging > article > img {
@@ -108,17 +128,19 @@ body {
   border-radius: 20px;
 }
 
-#rent img {
-  border: 5px solid #FFFFFF;
-  border-radius: 20px 20px 0px 0px;
-  max-width: 100%;
+
+#popular > article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 33%;
   max-height: 10%;
+  background-color: white;
+  border-radius: 20px;
 }
 
-#popularimg {
-  border: 5px solid #FFFFFF;
-  border-radius: 20px 20px 0px 0px;
-  background-image: url("../images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
+#popular > article > img {
+  max-width: 100%;
+  max-height: 50%;
+  border-radius: 20px;
 } 
