@@ -8,8 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5be0ef6e35.js" crossorigin="anonymous"></script>
     <title>Booki</title>
@@ -20,186 +18,193 @@
             <img src="./images/logo/Booki.png">
             <nav>
                 <ul>       
-                    <li><a href="#">Hébergements</a> </li>
-                    <li><a href="#">Activités</a></li>
+                    <li><a href="#lodging">Hébergements</a> </li>
+                    <li><a href="#thirdBox">Activités</a></li>
                 </ul>
             </nav>
         </div>
         <section id="underHeader">
             <h1>Trouvez votre Hébergement pour des vacances de rêve</h1>
-            <p>En plein centre-ville ou pleine nature</p>
+            <h3>En plein centre-ville ou pleine nature</h3>
         </section>
     </header>
     <section id="search">
-        <form action="">
-            <span class="fa-stack fa-2x">
-                <i class="fa-solid fa-square fa-stack-2x"></i>
-                <i class="fa-solid fa-location-dot fa-stack-1x fa-inverse"></i>
-              </span>
-           
-            <textarea id="subject" name="subject" placeholder="ville" ></textarea>
-            <div>
-                <input type="submit" value="Rechercher">
-            </div>
+        <form action="">    
+            <button id="loc"><i class="fa-solid fa-location-dot fa-lg"></i></button>
+            <input id="subject" name="subject" placeholder="ville" ></input>
+            <button id="searchButton"><h2>Rechercher</h2></button>
         </form>
     </section>  
     <section id="filtre">
             <h2>Filtres</h2>
-            <button><i class="fa-sharp fa-solid fa-money-bill-wave"></i>Économique</button>
-            <button><i class="fa-solid fa-person"></i>Familial</button>
-            <button><i class="fa-solid fa-heart"></i>Romantique</button>
-            <button><i class="fa-sharp fa-solid fa-dog"></i>Animaux Autorisés</button>
+            <button id="eco"><i class="fa-sharp fa-solid fa-money-bill-wave fa-lg"></i><h3>Économique</h3></button>
+            <button id="family"><i class="fa-solid fa-person fa-lg"></i><h3>Familial</h3></button>
+            <button id="heart"><i class="fa-solid fa-heart fa-lg"></i><h3>Romantique</h3></button>
+            <button id="dog"><i class="fa-sharp fa-solid fa-dog fa-lg"></i><h3>Animaux Autorisés</h3></button>
     </section>
     <section id="dispo">
-            <span class="fa-stack" style="vertical-align: top;">
-                <i class="fa-regular fa-circle fa-stack-2x "></i>
-                <i class="fa-solid fa-info fa-stack-1x"></i>
-            </span>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            <i class="fa-solid fa-info fa-5xs"></i>
+            <h4>Plus de 500 logements sont disponibles dans cette ville</h4>
     </section>     
     <div id="mainBlock">   
             <section id="lodging">
-                <div>
                     <h2>Hébergements à Marseille</h2>
-                </div>
-                <article>  
-                        <img src="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                        <h3>l'hôtel</h3>
-                        <p>Nuit à partir de 100<span>€</span></p>
-                        <div id="star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-sharp-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                </article>
-                <article>  
-                    <img src="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                    <h3>l'hôtel</h3>
-                    <p>Nuit à partir de 100<span>€</span></p>
-                    <div id="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-sharp-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </article>
-                <article>  
-                <img src="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                <h3>l'hôtel</h3>
-                <p>Nuit à partir de100<span>€</span></p>
-                <div id="star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-sharp-half-stroke"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                </article>
-                <article>  
-            <img src="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-            <h3>l'hôtel</h3>
-            <p>Nuit à partir de 100<span>€</span></p>
-            <div id="star">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-sharp-half-stroke"></i>
-                <i class="fa-regular fa-star"></i>
-            </div>
-                </article>
-                <article>  
-        <img src="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-        <h3>l'hôtel</h3>
-        <p>Nuit à partir de 100<span>€</span></p>
-        <div id="star">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star-sharp-half-stroke"></i>
-            <i class="fa-regular fa-star"></i>
-        </div>
-                </article>
-                <article>  
-                    <img src="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                    <h3>l'hôtel</h3>
-                    <p>Nuit à partir de 100<span>€</span></p>
-                    <div id="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-sharp-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </article>
+                    <a href="#">
+                        <article>  
+                            <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                            <h3>l'hôtel</h3>
+                            <p>Nuit à partir de 100<span>€</span></p>
+                            <div id="star">
+                             <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article>  
+                            <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                            <h3>l'hôtel</h3>
+                            <p>Nuit à partir de 100<span>€</span></p>
+                            <div id="star">
+                             <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article>  
+                            <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                            <h3>l'hôtel</h3>
+                            <p>Nuit à partir de 100<span>€</span></p>
+                            <div id="star">
+                             <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article>  
+                            <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                            <h3>l'hôtel</h3>
+                            <p>Nuit à partir de 100<span>€</span></p>
+                            <div id="star">
+                             <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article>  
+                            <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                            <h3>l'hôtel</h3>
+                            <p>Nuit à partir de 100<span>€</span></p>
+                            <div id="star">
+                             <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article>  
+                            <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                            <h3>l'hôtel</h3>
+                            <p>Nuit à partir de 100<span>€</span></p>
+                            <div id="star">
+                             <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </article>
+                    </a>
                 <div>
-                    <button><h3>Afficher plus</h3></button>
+                    <a>Afficher plus</a>
                 </div>
             </section>
             <section id="popular">
                 <div>
                     <h2>Les plus populaires</h2>
+                    <i class="fa-solid fa-chart-line"></i>
                 </div>
-                <article>  
-                    <img src="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                    <h3>l'hôtel</h3>
-                    <p>Nuit à partir de 100<span>€</span></p>
-                    <div id="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-sharp-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </article>
-                <article>  
-                    <img src="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                    <h3>l'hôtel</h3>
-                    <p>Nuit à partir de 100<span>€</span></p>
-                    <div id="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-sharp-half-stroke"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </article>
-            <article>  
-                <img src="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                <h3>l'hôtel</h3>
-                <p>Nuit à partir de 100<span>€</span></p>
-                <div id="star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-sharp-half-stroke"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-             </article>
-            <article>  
-                <img src="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
-                <h3>l'hôtel</h3>
-                <p>Nuit à partir de 100<span>€</span></p>
-                <div id="star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-sharp-half-stroke"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-            </article>
+                    <a href="#">
+                        <article>  
+                            <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                            <div>
+                            <h3>l'hôtel</h3>
+                            <p>Nuit à partir de 100<span>€</span></p>
+                            <div id="star">
+                             <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article>  
+                            <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                            <div>
+                            <h3>l'hôtel</h3>
+                            <p>Nuit à partir de 100<span>€</span></p>
+                            <div id="star">
+                             <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article>  
+                            <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                            <div>
+                            <h3>l'hôtel</h3>
+                            <p>Nuit à partir de 100<span>€</span></p>
+                            <div id="star">
+                             <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article>  
+                            <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                            <div>
+                            <h3>l'hôtel</h3>
+                            <p>Nuit à partir de 100<span>€</span></p>
+                            <div id="star">
+                             <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                        </article>
+                    </a>
             </section>
     </div> 
-    <div id="thirdBox">
-        <div>
+    <section id="thirdBox">   
         <h2>Activité à Marseille</h2>
-        </div>
-        <section id="actVignette">
+        <div id="actVignette">
             <article>
-            <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
-            <p>Vieux-port</p>
+                <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                <h3>Vieux-port</h3>
             </article>
             <article>
                 <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">

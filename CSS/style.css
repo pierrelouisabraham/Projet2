@@ -1,5 +1,10 @@
 body {
     font-family: 'Raleway';
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  a {
+    text-decoration: none;
   }
  
 #logo {
@@ -31,58 +36,141 @@ body {
     font-size: 16px;
   }
 
-#logo nav ul a {
-    text-decoration: none;
+
+
+  #logo nav ul a:hover {
+    border-top: 50px;
   }
 
-  #logo nav ul a:focus {
-    border-top: 10px;
-  }
 
-#underHeader {
-    display: flex;
-    flex-direction: column;
-  }
 
 #search form {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: stretch;
   }
+
+#subject{
+  display: flex;
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+  border-radius: 15px;
+  height: 49px;
+  width: 332px;
+}
+
+#searchButton{
+  height: 49px;
+  width: 132px;
+  background: #0065FC;
+  border: 1px solid #0065FC;
+  border-radius: 0px 15px 15px 0px;
+  padding: 15px 16px 15px 16px;
+
+}
+
+#loc{
+  height: 49px;
+  width: 50px;
+  display: flex;
+  background: #F2F2F2;
+  border: 1px solid #F2F2F2;
+  border-radius: 15px 0px 0px 15px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+i.fa-location-dot{
+  display: flex;
+  box-sizing: border-box;
+  border: 1px solid #D9D9D9;
+  border-radius: 15px 0px 0px 15px;
+}
 
 #filtre {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 914px;
-  height: 50px;
+  align-items: center;
+  max-width: 70%;
 }
 
-#filtre h2 {
-  height: 21px;
-  width: 54px;
-  left: 62px;
-  top: 294px;
-  border-radius: nullpx;
+#filtre h3 {
+  font-size: 17px;
+  font-family: 'Raleway';
 }
 
-#filtres button > * {
+#filtre > button {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background: #F0F2F6;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  background: white;
+  border: 2px solid #D9D9D9;
+  border-radius: 25px;
+  max-height: 50px;
+}
+
+
+
+#filtre button:hover {
+  background: #DEEBFF;
+}
+
+#filtre i {
+  color: blue;
+}
+
+#eco {
+  flex-basis: 18%;
+}
+
+#family {
+  flex-basis: 13%;
+}
+
+#heart {
+  flex-basis: 19%;
+}
+
+#dog
+{
+  display: flex;
+  min-width: 226px;
 }
 
 #dispo {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+i.fa-info {
+  display: flex;
+  border-radius: 60px;
+  box-shadow: 0 0 2px #888;
+  height: 24px;
+  width: 24px;
+  color: #0065FC;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#dispo > h4 {
+  padding-left: 10px;
 }
 
 #mainBlock {
   display: flex;
   flex-flow: row;
   justify-content: space-around;
+}
+
+i.fa-star {
+  color: #0065FC;
+}
+
+i.fa-regular {
+  color: #F2F2F2;
 }
 
 #lodging {
@@ -94,16 +182,11 @@ body {
   align-content: flex-start;
 }
 
-#lodging div {
-  display: flex;
-  flex-basis: 100%;
-  max-height: 10%;
-}
-
 #lodging h2 {
   background-color:  #F2F2F2;
   max-width: 100%;
-  
+  display: flex;
+  flex-basis: 100%;
 }
 
 #popular{
@@ -113,28 +196,33 @@ body {
   background-color:  #F2F2F2;
 }
 
+#popular > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
-#lodging > article {
+
+#lodging > a {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  max-width: 33%;
-  max-height: 25%;
+  max-width: 30%;
   background-color: white;
   border-radius: 20px;
 }
 
-#lodging > article > img {
+#lodging > a > article > img {
   max-width: 100%;
   max-height: 50%;
   border-radius: 20px;
 }
 
 
-#popular > article {
+#popular > a {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   max-width: 60%;
   max-height: 25%;
@@ -143,8 +231,19 @@ body {
   align-self: center;
 }
 
-#popular > article > img {
-  max-width: 100%;
+#popular > a > article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#popular > a > article > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#popular > a > article > img {
+  max-width: 50%;
   max-height: 50%;
   border-radius: 20px;
 } 
