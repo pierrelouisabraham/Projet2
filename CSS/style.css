@@ -200,6 +200,9 @@ i.fa-regular {
 
 #lodging p {
   font-size: 14px;
+  display: flex;
+  max-height: 0%;
+  align-items: center;
 }
 
 #popular{
@@ -220,30 +223,41 @@ i.fa-regular {
 #lodging > a {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
-  max-width: 30%;
+  max-width: 31%;
   background-color: white;
   border-radius: 20px;
-  max-height: 50%;
+  max-height: 30%;
   margin-bottom: 40px;
 }
 
-#lodging > a > article > img {
-  display: inline;
-  max-width: 120%;
-  max-height: 50%;
-  border-radius: 20px;
-  margin-top: 2%;
+#lodging > a > article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-height: 80%;
 }
 
+#lodging > a > article > img {
+  max-height: 50%;
+  border: 5px solid #FFFFFF;
+  border-radius: 20px 20px 0px 0px;
+  max-height: 70%;
+}
+
+#lodging h3 {
+  max-height: 0%;
+}
+
+#popular h3 {
+  max-height: 0%;
+}
 
 #popular > a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  max-width: 60%;
-  max-height: 25%;
+  max-width: 80%;
   background-color: white;
   border-radius: 20px;
   align-self: center;
