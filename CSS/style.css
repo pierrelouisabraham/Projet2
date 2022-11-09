@@ -167,7 +167,7 @@ i.fa-info {
 #mainBlock {
   display: flex;
   flex-flow: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 i.fa-star {
@@ -182,8 +182,8 @@ i.fa-regular {
   display: flex;
   flex-flow: row wrap;
   background-color:  #F2F2F2;
-  max-width: 65%;
-  justify-content: space-around;
+  max-width: 67%;
+  justify-content: space-evenly;
   align-content: flex-start;
   border-radius: 20px;
 }
@@ -205,6 +205,34 @@ i.fa-regular {
   align-items: center;
 }
 
+#lodging > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 31%;
+  background-color: white;
+  border-radius: 20px;
+  max-height: 30%;
+  margin-bottom: 30px;
+}
+
+#lodging > a > article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-height: 50%;
+}
+
+#lodging > a > article > img {
+  border: 5px solid #FFFFFF;
+  border-radius: 20px 20px 0px 0px;
+  max-height: 120%;
+}
+
+#lodging h3 {
+  max-height: 0%;
+}
+
 #popular{
   display: flex;
   flex-direction: column;
@@ -217,36 +245,6 @@ i.fa-regular {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-
-#lodging > a {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  max-width: 31%;
-  background-color: white;
-  border-radius: 20px;
-  max-height: 30%;
-  margin-bottom: 40px;
-}
-
-#lodging > a > article {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  max-height: 80%;
-}
-
-#lodging > a > article > img {
-  max-height: 50%;
-  border: 5px solid #FFFFFF;
-  border-radius: 20px 20px 0px 0px;
-  max-height: 70%;
-}
-
-#lodging h3 {
-  max-height: 0%;
 }
 
 #popular h3 {
@@ -321,14 +319,15 @@ footer {
 
 footer h2 {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 footer section ul {
   list-style-type:none;
-  
+  margin-left: -18%;
 }
 
 footer section ul li a {
   text-decoration : none;
+  
 }
