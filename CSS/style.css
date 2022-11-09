@@ -59,13 +59,18 @@ body {
 }
 
 #searchButton{
+  display: flex;
   height: 49px;
   width: 132px;
   background: #0065FC;
   border: 1px solid #0065FC;
   border-radius: 0px 15px 15px 0px;
-  padding: 15px 16px 15px 16px;
+  align-items: center;
+}
 
+#searchButton > h2 {
+  display: flex;
+  color: #FFFFFF;
 }
 
 #loc{
@@ -180,6 +185,7 @@ i.fa-regular {
   max-width: 65%;
   justify-content: space-around;
   align-content: flex-start;
+  border-radius: 20px;
 }
 
 #lodging h2 {
@@ -188,12 +194,20 @@ i.fa-regular {
   display: flex;
   flex-basis: 100%;
 }
+#lodging  h3 {
+  font-size: 16px;
+}
+
+#lodging p {
+  font-size: 14px;
+}
 
 #popular{
   display: flex;
   flex-direction: column;
   max-width: 30%;
   background-color:  #F2F2F2;
+  border-radius: 20px;
 }
 
 #popular > div {
@@ -211,12 +225,16 @@ i.fa-regular {
   max-width: 30%;
   background-color: white;
   border-radius: 20px;
+  max-height: 50%;
+  margin-bottom: 40px;
 }
 
 #lodging > a > article > img {
-  max-width: 100%;
+  display: inline;
+  max-width: 120%;
   max-height: 50%;
   border-radius: 20px;
+  margin-top: 2%;
 }
 
 
@@ -229,6 +247,7 @@ i.fa-regular {
   background-color: white;
   border-radius: 20px;
   align-self: center;
+  margin-bottom: 20px;
 }
 
 #popular > a > article {
@@ -246,7 +265,10 @@ i.fa-regular {
   max-width: 50%;
   max-height: 50%;
   border-radius: 20px;
-} 
+}
+i.fa-chart-line {
+  color: #0065FC;
+}
 
 #thirdBox {
   display: flex;
