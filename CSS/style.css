@@ -6,6 +6,10 @@ body {
   a {
     text-decoration: none;
   }
+
+  p span {
+    font-weight: bold;
+  }
  
 #logo {
     display: flex;
@@ -217,7 +221,8 @@ i.fa-regular {
 .vignette {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 #lodging h2 {
@@ -227,6 +232,7 @@ i.fa-regular {
   flex-basis: 100%;
   padding-left: 16px;
 }
+
 #lodging  h3 {
   font-size: 16px;
 }
@@ -234,16 +240,23 @@ i.fa-regular {
 #lodging p {
   font-size: 14px;
   display: flex;
-  max-height: 0%;
   align-items: center;
+
 }
+
+.description {
+  margin-left: 6px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 
 .vignette > a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   max-width: 31%;
-  
+  margin-right: 50px;
   border-radius: 20px;
   max-height: 30%;
   margin-bottom: 30px;
@@ -261,8 +274,8 @@ i.fa-regular {
   border-radius: 20px 20px 20px 20px;
   filter: drop-shadow(1px 2px 4px grey);
   color: black;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 2px;
+  padding-right: 2px;
   padding-bottom: 10px;
 }
 
@@ -273,10 +286,7 @@ i.fa-regular {
   height: auto;
   max-width: 100%;
   overflow: hidden;
-}
-
-#lodging h3 {
-  max-height: 0%;
+  height: 250px;
 }
 
 #popular{
