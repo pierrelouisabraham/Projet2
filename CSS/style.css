@@ -136,7 +136,15 @@ i.fa-location-dot{
 #heart {
   flex-basis: 19%;
 }
-
+/* marge filtre + mettre bouton dans un ul li pour fixer les bouttons 
++ search retirer bordure sur ville et resize 
++ input submit et resize la value 
++ mettre un cursor pointer sur tous les boutons 
++ main mettre un padding sur le main et lodging
++ mettre un padding
++ resize ave un ratio fixe
++ bordure top header
++ bold €*/
 #dog
 {
   display: flex;
@@ -180,7 +188,7 @@ i.fa-regular {
 
 #lodging {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   background-color:  #F2F2F2;
   max-width: 67%;
   justify-content: space-evenly;
@@ -188,11 +196,18 @@ i.fa-regular {
   border-radius: 20px;
 }
 
+.vignette {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
 #lodging h2 {
   background-color:  #F2F2F2;
   max-width: 100%;
   display: flex;
   flex-basis: 100%;
+  padding-left: 16px;
 }
 #lodging  h3 {
   font-size: 16px;
@@ -205,7 +220,7 @@ i.fa-regular {
   align-items: center;
 }
 
-#lodging > a {
+.vignette > a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -216,14 +231,14 @@ i.fa-regular {
   margin-bottom: 30px;
 }
 
-#lodging > a > article {
+.vignette > a > article {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   max-height: 50%;
 }
 
-#lodging > a > article > img {
+#lodging > div > a > article > img {
   border: 5px solid #FFFFFF;
   border-radius: 20px 20px 0px 0px;
   max-height: 120%;
