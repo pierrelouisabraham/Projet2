@@ -254,13 +254,16 @@ i.fa-regular {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100%;
+  height: 300px;
+  width: 300px;
   background-color: white;
   border: 5px solid #FFFFFF;
   border-radius: 20px 20px 20px 20px;
   filter: drop-shadow(1px 2px 4px grey);
   color: black;
-  padding-left: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 10px;
 }
 
 
@@ -269,6 +272,7 @@ i.fa-regular {
   border-radius: 20px 20px 0px 0px;
   height: auto;
   max-width: 100%;
+  overflow: hidden;
 }
 
 #lodging h3 {
