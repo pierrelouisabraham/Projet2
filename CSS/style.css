@@ -5,7 +5,9 @@ body {
   }
   a {
     text-decoration: none;
+    cursor: pointer;
   }
+
 
   p span {
     font-weight: bold;
@@ -27,12 +29,12 @@ body {
     display: flex;
     justify-content: flex-end;
     flex-basis: 100%;
+    
 }
 
 #logo nav ul {
     display: flex;
     flex-direction: row;
-    align-items: center;
     flex-basis: 30%;
     justify-content: space-evenly;
     list-style-type:none;
@@ -42,8 +44,8 @@ body {
 
 
 
-  #logo nav ul a:hover {
-    border-top: 50px;
+  #logo > nav > ul :hover {
+    border-top: 1px solid blue;
   }
 
 
@@ -116,9 +118,7 @@ i.fa-location-dot{
 #filtre {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  max-width: 70%;
 }
 
 #filtre h3 {
@@ -126,7 +126,15 @@ i.fa-location-dot{
   font-family: 'Raleway';
 }
 
-#filtre > button {
+#filtre ul {
+  display: flex;
+    justify-content: space-evenly;
+    flex-basis: 70%;
+    list-style: none;
+    padding: 0;
+}
+
+#filtre  button {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -148,15 +156,15 @@ i.fa-location-dot{
 }
 
 #eco {
-  flex-basis: 18%;
+  min-width: 180px;
 }
 
 #family {
-  flex-basis: 13%;
+  min-width: 120px;
 }
 
 #heart {
-  flex-basis: 19%;
+  min-width: 180px;
 }
 /* marge filtre + mettre bouton dans un ul li pour fixer les bouttons 
 + search retirer bordure sur ville et resize 
@@ -321,7 +329,6 @@ i.fa-regular {
 #popular > a > article {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
 
 #popular > a > article > div {
@@ -330,9 +337,11 @@ i.fa-regular {
 }
 
 #popular > a > article > img {
+  border: 5px solid #FFFFFF;
+  border-radius: 20px 0px 0px 20px;
+  height: auto;
   max-width: 50%;
-  max-height: 50%;
-  border-radius: 20px;
+  overflow: hidden;
 }
 i.fa-chart-line {
   color: #0065FC;
@@ -346,22 +355,32 @@ i.fa-chart-line {
 #actVignette > article > * {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  max-width: 33%;
-  max-height: 10%;
-  background-color: white;
-  border-radius: 20px;
+
 }
 
 #actVignette {
   display: flex;
-  
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-#actVignette > article > img {
+#actVignette > article {
+  background-color: white;
+  border: 5px solid #FFFFFF;
+  border-radius: 20px 20px 20px 20px;
+  filter: drop-shadow(1px 2px 4px grey);
+  max-width: 22%;
+}
+
+#actVignette > article > h3 {
+  padding-left: 10px;
+}
+
+#actVignette > article > a > img {
+  border-radius: 20px 20px 0px 0px;
   max-width: 100%;
-  max-height: 50%;
-  border-radius: 20px;
+  overflow: hidden;
 }
 
 footer {
@@ -371,11 +390,13 @@ footer {
   max-width: 100%;
   flex-basis: 100%;
   justify-content: space-around;
+  margin-top: 40px;
 }
 
-footer h2 {
+footer > h2 {
   display: flex;
   justify-content: flex-start;
+  padding-left: 10px;
 }
 
 footer section ul {
