@@ -44,11 +44,13 @@ body {
 
 
 
-  #logo > nav > ul :hover {
+  .menuItem:hover {
     border-top: 1px solid blue;
   }
 
-
+.menuItem {
+  padding-top: 23px;
+}
 
 #search form {
     display: flex;
@@ -220,7 +222,7 @@ i.fa-regular {
   display: flex;
   flex-direction: column;
   background-color:  #F2F2F2;
-  max-width: 67%;
+  width: 67%;
   justify-content: space-evenly;
   align-content: flex-start;
   border-radius: 20px;
@@ -300,15 +302,19 @@ i.fa-regular {
 #popular{
   display: flex;
   flex-direction: column;
-  max-width: 30%;
+  width: 30%;
   background-color:  #F2F2F2;
   border-radius: 20px;
 }
 
-#popular > div {
+#popularHeader {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+}
+
+#popularHeader > h2 {
+  margin-left: 5%;
 }
 
 #popular h3 {
@@ -324,11 +330,15 @@ i.fa-regular {
   border-radius: 20px;
   align-self: center;
   margin-bottom: 20px;
+  filter: drop-shadow(1px 2px 4px grey);
 }
 
 #popular > a > article {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  height: 232px;
+  width: 410px;
 }
 
 #popular > a > article > div {
@@ -340,11 +350,17 @@ i.fa-regular {
   border: 5px solid #FFFFFF;
   border-radius: 20px 0px 0px 20px;
   height: auto;
-  max-width: 50%;
+  width: 250px;
   overflow: hidden;
+  height: 96%;
+  object-fit: cover;
+  align-self: center;
 }
+
 i.fa-chart-line {
   color: #0065FC;
+  margin-right: 5%;
+  font-size: 21px;
 }
 
 #thirdBox {
