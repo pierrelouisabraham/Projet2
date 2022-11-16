@@ -226,12 +226,12 @@ i.fa-regular {
   justify-content: space-evenly;
   align-content: flex-start;
   border-radius: 20px;
+  padding-left: 53px;
 }
 
 .vignette {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
   margin-top: 50px;
 }
 
@@ -240,7 +240,6 @@ i.fa-regular {
   max-width: 100%;
   display: flex;
   flex-basis: 100%;
-  padding-left: 16px;
 }
 
 #lodging  h3 {
@@ -299,6 +298,12 @@ i.fa-regular {
   height: 250px;
 }
 
+#plus {
+  margin-bottom: 31px;
+  margin-left: 116px;
+  color: black;
+}
+
 #popular{
   display: flex;
   flex-direction: column;
@@ -314,7 +319,7 @@ i.fa-regular {
 }
 
 #popularHeader > h2 {
-  margin-left: 5%;
+  margin-left: 13%;
 }
 
 #popular h3 {
@@ -339,6 +344,7 @@ i.fa-regular {
   justify-content: space-around;
   height: 232px;
   width: 410px;
+  color: black;
 }
 
 #popular > a > article > div {
@@ -359,7 +365,7 @@ i.fa-regular {
 
 i.fa-chart-line {
   color: #0065FC;
-  margin-right: 5%;
+  margin-right: 13%;
   font-size: 21px;
 }
 
