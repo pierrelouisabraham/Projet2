@@ -1,15 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
     font-family: 'Raleway';
     padding-left: 2%;
     padding-right: 2%;
   }
-  a {
+
+a {
     text-decoration: none;
     cursor: pointer;
   }
 
 
-  p span {
+p span {
     font-weight: bold;
   }
  
@@ -99,7 +104,7 @@ body {
   color: #FFFFFF;
 }
 
-#loc{
+#loc {
   height: 106%;
   width: 50px;
   display: flex;
@@ -110,7 +115,7 @@ body {
   justify-content: space-around;
 }
 
-i.fa-location-dot{
+i.fa-location-dot {
   display: flex;
   box-sizing: border-box;
   border: 1px solid #D9D9D9;
@@ -147,8 +152,6 @@ i.fa-location-dot{
   max-height: 50px;
 }
 
-
-
 #filtre button:hover {
   background: #DEEBFF;
 }
@@ -168,17 +171,8 @@ i.fa-location-dot{
 #heart {
   min-width: 180px;
 }
-/* marge filtre + mettre bouton dans un ul li pour fixer les bouttons 
-+ search retirer bordure sur ville et resize 
-+ input submit et resize la value 
-+ mettre un cursor pointer sur tous les boutons 
-+ main mettre un padding sur le main et lodging
-+ mettre un padding
-+ resize ave un ratio fixe
-+ bordure top header
-+ bold €*/
-#dog
-{
+/* */
+#dog {
   display: flex;
   min-width: 226px;
 }
@@ -226,18 +220,17 @@ i.fa-regular {
   justify-content: space-evenly;
   align-content: flex-start;
   border-radius: 20px;
-  padding-left: 53px;
+  padding: 0 53px;
 }
 
 .vignette {
   display: flex;
   flex-flow: row wrap;
-  margin-top: 50px;
+  justify-content: space-between;
 }
 
 #lodging h2 {
   background-color:  #F2F2F2;
-  max-width: 100%;
   display: flex;
   flex-basis: 100%;
 }
@@ -248,9 +241,7 @@ i.fa-regular {
 
 #lodging p {
   font-size: 14px;
-  display: flex;
-  align-items: center;
-
+  color: black;
 }
 
 .description {
@@ -263,9 +254,8 @@ i.fa-regular {
 .vignette > a {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  max-width: 31%;
-  margin-right: 50px;
+  justify-content: space-between;
+  width: 31%;
   border-radius: 20px;
   max-height: 30%;
   margin-bottom: 30px;
@@ -276,8 +266,6 @@ i.fa-regular {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 300px;
-  width: 300px;
   background-color: white;
   border: 5px solid #FFFFFF;
   border-radius: 20px 20px 20px 20px;
@@ -292,19 +280,21 @@ i.fa-regular {
 .vignette > a > article > img {
   border: 5px solid #FFFFFF;
   border-radius: 20px 20px 0px 0px;
-  height: auto;
-  max-width: 100%;
   overflow: hidden;
-  height: 250px;
+  height: 124px;
+  object-fit: cover;
 }
 
 #plus {
   margin-bottom: 31px;
-  margin-left: 116px;
-  color: black;
 }
 
-#popular{
+#plus  p {
+  color: black;
+  font-size: 18px;
+}
+
+#popular {
   display: flex;
   flex-direction: column;
   width: 30%;
@@ -320,45 +310,47 @@ i.fa-regular {
 
 #popularHeader > h2 {
   margin-left: 13%;
+  flex-basis: 100%;
 }
 
 #popular h3 {
-  max-height: 0%;
+  margin-bottom: 0%;
 }
 
-#popular > a {
+#vignettePop {
+  margin-left: 13%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 13%;
+}
+
+#vignettePop > a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  max-width: 80%;
   background-color: white;
   border-radius: 20px;
-  align-self: center;
-  margin-bottom: 20px;
+  margin-top: 30px;
   filter: drop-shadow(1px 2px 4px grey);
 }
 
-#popular > a > article {
+#vignettePop > a > article {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 232px;
-  width: 410px;
   color: black;
 }
 
-#popular > a > article > div {
+#vignettePop > a > article > div {
   display: flex;
   flex-direction: column;
 }
 
-#popular > a > article > img {
+#vignettePop  > a > article > img {
   border: 5px solid #FFFFFF;
   border-radius: 20px 0px 0px 20px;
-  height: auto;
-  width: 250px;
-  overflow: hidden;
-  height: 96%;
+  width: 137px;
+  height: 144px;
   object-fit: cover;
   align-self: center;
 }
@@ -377,7 +369,6 @@ i.fa-chart-line {
 #actVignette > article > * {
   display: flex;
   flex-direction: column;
-
 }
 
 #actVignette {
@@ -399,10 +390,15 @@ i.fa-chart-line {
   padding-left: 10px;
 }
 
+#actVignette a {
+  width: 100%;
+}
+
 #actVignette > article > a > img {
   border-radius: 20px 20px 0px 0px;
-  max-width: 100%;
   overflow: hidden;
+  height: 389px;
+  object-fit: cover;
 }
 
 footer {
