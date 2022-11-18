@@ -6,6 +6,7 @@ body {
     font-family: 'Raleway';
     padding-left: 2%;
     padding-right: 2%;
+    width: 100%;
   }
 
 a {
@@ -49,9 +50,9 @@ p span {
 
 
 
-  .menuItem:hover {
+.menuItem:hover {
     border-top: 1px solid blue;
-  }
+}
 
 .menuItem {
   padding-top: 23px;
@@ -104,7 +105,7 @@ p span {
   color: #FFFFFF;
 }
 
-#loc {
+#localisation {
   height: 106%;
   width: 50px;
   display: flex;
@@ -171,13 +172,13 @@ i.fa-location-dot {
 #heart {
   min-width: 180px;
 }
-/* */
+
 #dog {
   display: flex;
   min-width: 226px;
 }
 
-#dispo {
+#availability {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -194,7 +195,7 @@ i.fa-info {
   justify-content: space-evenly;
 }
 
-#dispo > h4 {
+#availability > h4 {
   padding-left: 10px;
 }
 
@@ -202,6 +203,7 @@ i.fa-info {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+  width: 100%;
 }
 
 i.fa-star {
@@ -223,7 +225,7 @@ i.fa-regular {
   padding: 0 53px;
 }
 
-.vignette {
+.thumbnails {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -251,7 +253,7 @@ i.fa-regular {
 }
 
 
-.vignette > a {
+.thumbnails > a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -259,10 +261,10 @@ i.fa-regular {
   border-radius: 20px;
   max-height: 30%;
   margin-bottom: 30px;
-  box-shadow: black;
+  box-shadow: 0 0 2px #888;
 }
 
-.vignette > a > article {
+.thumbnails > a > article {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -277,7 +279,7 @@ i.fa-regular {
 }
 
 
-.vignette > a > article > img {
+.thumbnails > a > article > img {
   border: 5px solid #FFFFFF;
   border-radius: 20px 20px 0px 0px;
   overflow: hidden;
@@ -317,14 +319,14 @@ i.fa-regular {
   margin-bottom: 0%;
 }
 
-#vignettePop {
+#thumbnailsPop {
   margin-left: 13%;
   display: flex;
   flex-direction: column;
   margin-right: 13%;
 }
 
-#vignettePop > a {
+#thumbnailsPop > a {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -334,19 +336,19 @@ i.fa-regular {
   filter: drop-shadow(1px 2px 4px grey);
 }
 
-#vignettePop > a > article {
+#thumbnailsPop > a > article {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   color: black;
 }
 
-#vignettePop > a > article > div {
+#thumbnailsPop > a > article > div {
   display: flex;
   flex-direction: column;
 }
 
-#vignettePop  > a > article > img {
+#thumbnailsPop  > a > article > img {
   border: 5px solid #FFFFFF;
   border-radius: 20px 0px 0px 20px;
   width: 137px;
@@ -366,35 +368,35 @@ i.fa-chart-line {
   flex-flow: column ;
 }
 
-#actVignette > article > * {
+#actthumbnails > article > * {
   display: flex;
   flex-direction: column;
 }
 
-#actVignette {
+#actthumbnails {
   display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-#actVignette > article {
+#actthumbnails > article {
   background-color: white;
   border: 5px solid #FFFFFF;
   border-radius: 20px 20px 20px 20px;
   filter: drop-shadow(1px 2px 4px grey);
-  max-width: 22%;
+  width: 22%;
 }
 
-#actVignette > article > h3 {
+#actthumbnails > article > h3 {
   padding-left: 10px;
 }
 
-#actVignette a {
+#actthumbnails a {
   width: 100%;
 }
 
-#actVignette > article > a > img {
+#actthumbnails > article > a > img {
   border-radius: 20px 20px 0px 0px;
   overflow: hidden;
   height: 389px;
