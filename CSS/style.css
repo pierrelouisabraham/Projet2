@@ -6,15 +6,14 @@ body {
     font-family: 'Raleway';
     padding-left: 2%;
     padding-right: 2%;
-    width: 100%;
   }
 
 a {
     text-decoration: none;
     cursor: pointer;
+    color: black;
   }
-
-
+ 
 p span {
     font-weight: bold;
   }
@@ -24,6 +23,7 @@ p span {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin-top: -8px;
   }
 
 #logo img {
@@ -46,22 +46,24 @@ p span {
     list-style-type:none;
     font-weight: 400;
     font-size: 16px;
+    margin-top: 0px;
+    padding-left: 0px;
   }
 
 
 
-.menuItem:hover {
+li.menu-item:hover {
     border-top: 1px solid blue;
 }
 
-.menuItem {
-  padding-top: 23px;
+li.menu-item {
+  padding-top: 30px;
 }
 
 #search form {
     display: flex;
     align-items: center;
-  }
+}
 
 #subject{
   display: flex;
@@ -98,6 +100,10 @@ p span {
   justify-content: center;
   font-family: 'Raleway';
   font-weight: bold;
+}
+
+#searchButton i{
+  display: none;
 }
 
 #searchButton > h2 {
@@ -142,8 +148,9 @@ i.fa-location-dot {
     padding: 0;
 }
 
-#filtre  button {
+#filtre button {
   display: flex;
+  flex: row wrap;
   justify-content: space-evenly;
   align-items: center;
   box-sizing: border-box;
@@ -158,24 +165,23 @@ i.fa-location-dot {
 }
 
 #filtre i {
-  color: blue;
+  color:#0065FC;;
 }
 
 #eco {
-  min-width: 180px;
+  width: 154%;
 }
 
 #family {
-  min-width: 120px;
+  width: 148%;
 }
 
 #heart {
-  min-width: 180px;
+  width: 154%;
 }
 
 #dog {
-  display: flex;
-  min-width: 226px;
+  width: 140%;
 }
 
 #availability {
@@ -207,6 +213,8 @@ i.fa-info {
 }
 
 i.fa-star {
+  width: 12px;
+  height: 12px;
   color: #0065FC;
 }
 
@@ -232,7 +240,6 @@ i.fa-regular {
 }
 
 #lodging h2 {
-  background-color:  #F2F2F2;
   display: flex;
   flex-basis: 100%;
 }
@@ -407,8 +414,6 @@ footer {
   background-color: #F2F2F2;
   display: flex;
   flex-flow: row;
-  max-width: 100%;
-  flex-basis: 100%;
   justify-content: space-around;
   margin-top: 40px;
 }
@@ -421,10 +426,228 @@ footer > h2 {
 
 footer section ul {
   list-style-type:none;
-  margin-left: -18%;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer section ul li {
+  padding-bottom: 4%;
 }
 
 footer section ul li a {
   text-decoration : none;
   
+}
+
+@media only screen and (max-width: 992px) {
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  #logo nav ul {
+  flex-basis: 58%;
+  }
+
+  #filtre button {
+    width: 126%;
+  }
+
+  #filtre ul {
+    flex-basis: 100%;
+  }
+
+  #mainBlock {
+    flex-direction: column;
+  }
+
+  #lodging {
+    width: 100%;
+  }
+  
+  #popular {
+    width: 100%;
+  }
+
+  #popularHeader > h2 {
+    margin-left: 2%;
+  }
+
+  i.fa-chart-line {
+    margin-right: 2%;
+  }
+
+  #thumbnailsPop {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0px;
+  }
+
+  #thumbnailsPop > a {
+    width: 31%;
+  }
+
+  #thumbnailsPop > a > article > img {
+    width: 106px;
+    height: 144px;
+  }
+
+  #description {
+    flex-direction: row;
+  }
+  #actthumbnails > article > a > img {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h2{
+    font-size: 20px;
+  }
+
+  body {
+    font-family: 'Raleway';
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  #logo {
+    flex-direction: column;
+        margin-top: 0px;
+  }
+
+  
+  #logo nav{
+    width: 100%;
+  }
+
+  #logo nav ul{
+    flex-basis: 100%;
+    justify-content: space-evenly;
+    align-self: none;
+    padding: 0px;
+  }
+
+  li.menu-item{
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    border-bottom: 1px solid  #F2F2F2;
+  }
+
+  li.menu-item:hover {
+    border-bottom: 1px solid blue;
+    border-top: 0px;
+  }
+
+  #filtre {
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  #filtre ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #filtre li {
+    width: 50%;
+    margin-top: 10px;
+  }
+
+  #filtre button {
+    width: 85%;
+    justify-content: flex-start;
+  }
+
+  #searchButton {
+    font-size: 0px;
+  }
+
+  #searchButton i {
+    display: flex;
+    font-size: 12px;
+  }
+
+  #mainBlock {
+    flex-direction: column-reverse;
+  }
+
+  #plus {
+    margin-bottom: 31px;
+    display: none;
+  }
+
+  #lodging {
+    width: 100%;
+    background-color: white;
+    padding: 0 7px;
+  }
+
+  #thumbnailsPop > a {
+    width: 96%;
+    margin-left: 2%;
+  }
+
+  #thumbnailsPop {
+    flex-direction: column;
+  }
+
+  .thumbnails {
+    flex-direction: column;
+  }
+
+  .thumbnails > a {
+    width: 100%;
+  }
+
+  #popular {
+    width:100%
+  }
+
+  #actthumbnails {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  #actthumbnails > article {
+    width: 100%;
+    padding-bottom: 2%;
+  }
+
+  #actthumbnails > article > a > img {
+        height: 150px;
+}
+
+  footer {
+    flex-direction: column;
+    width: 110%;
+  }
+
+  footer > h2 {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+  }
+  
+  footer section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer section ul {
+    margin: 0px;
+    padding: 0px;
+  }
 }
